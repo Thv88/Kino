@@ -34,7 +34,6 @@ public class HomeController
     @GetMapping("/")
     public String index(Model model)
     {
-        createDummyData();
         Iterable<Film> films = filmRepository.findFilmsByVisibleOnSiteTrue();
 
         System.out.println("Printing Films just before they are show in GALLERY");
