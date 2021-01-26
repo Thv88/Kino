@@ -46,6 +46,6 @@ class HomeControllerTest
         /* films attribute is added to model, once */
         verify(model, times(1)).addAttribute("films", new ArrayList<Film>());
         /* does method return right string? */
-        assertEquals("film", homeController.index(model));
+        assertEquals("test", homeController.index(model));
     }
 }
